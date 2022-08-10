@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {background-color: black;}
+        .result {
+            color: red;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        arr = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+        function gethex() {
+            hex = "0x"+parseInt(arr.join(""), 2).toString(16).toUpperCase().padStart(4, '0');
+
+
+            document.getElementById("display").innerHTML=hex
+            document.getElementById("bin").innerHTML=arr.join("").match(/.{1,4}/g).join(" ")
+        }
+
+        function s(el,id) {
+            arr[id-1] = + !arr[id-1]
+            el.setAttribute("fill",arr[id-1] == 1 ? "white":"#3D3D3D")
+            gethex()
+        }
+
+    </script>
+</head>
+<body>
+    <div class="result">
+        <div id="display">0x0000</div>
+        <div id="bin">0000 0000 0000 0000</div>
+    </div>
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg width="608px" height="559px" viewBox="0 0 1216 1119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>xvisd</title>
+    <g id="xvisd" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="16" onclick="s(this,16)" fill="#3D3D3D" transform="translate(745.651367, 343.530273) scale(-1, 1) translate(-745.651367, -343.530273) " points="650.382812 166.453125 650.382812 257.988281 824.488281 520.607422 840.919922 520.607422 840.919922 428.955078 666.929688 166.453125"></polygon>
+        <polygon id="15" onclick="s(this,15)" fill="#3D3D3D" points="883.121094 125.294922 849.228516 159.235352 849.228516 524.225586 883.121094 559.959961 918.039062 524.225586 918.039062 159.235352"></polygon>
+        <polygon id="14" onclick="s(this,14)" fill="#3D3D3D" points="845.481445 88.6474609 880.673828 123.547852 845.481445 158.540039 646.317383 158.540039 610.5 123.59375 646.317383 88.6474609"></polygon>
+        <polygon id="13" onclick="s(this,13)" fill="#3D3D3D" points="376.382812 166.453125 376.382812 257.988281 550.488281 520.607422 566.919922 520.607422 566.919922 428.955078 392.929688 166.453125"></polygon>
+        <polygon id="12" onclick="s(this,12)" fill="#3D3D3D" points="337.121094 125.294922 303.228516 159.235352 303.228516 524.225586 337.121094 559.959961 372.039062 524.225586 372.039062 159.235352"></polygon>
+        <polygon id="11" onclick="s(this,11)" fill="#3D3D3D" points="608.121094 125.294922 574.228516 159.235352 574.228516 524.225586 608.121094 559.959961 643.039062 524.225586 643.039062 159.235352"></polygon>
+        <polygon id="10" onclick="s(this,10)" fill="#3D3D3D" points="572.481445 88.6474609 604.673828 123.547852 569.481445 158.540039 376.317383 158.540039 340.5 123.59375 376.317383 88.6474609"></polygon>
+        <polygon id="9" onclick="s(this,9)" fill="#3D3D3D" transform="translate(745.651367, 781.530273) scale(-1, -1) translate(-745.651367, -781.530273) " points="650.382812 604.453125 650.382812 695.988281 824.488281 958.607422 840.919922 958.607422 840.919922 866.955078 666.929688 604.453125"></polygon>
+        <polygon id="8" onclick="s(this,8)" fill="#3D3D3D" points="845.481445 962.647461 880.673828 997.547852 845.481445 1032.54004 646.317383 1032.54004 610.5 997.59375 646.317383 962.647461"></polygon>
+        <polygon id="7" onclick="s(this,7)" fill="#3D3D3D" points="883.121094 560.294922 849.228516 594.235352 849.228516 959.225586 883.121094 994.959961 918.039062 959.225586 918.039062 594.235352"></polygon>
+        <polygon id="6" onclick="s(this,6)" fill="#3D3D3D" points="845.481445 524.647461 880.673828 559.547852 845.481445 594.540039 646.317383 594.540039 610.5 559.59375 646.317383 524.647461"></polygon>
+        <polygon id="5" onclick="s(this,5)"" fill="#3D3D3D" transform="translate(471.651367, 781.530273) scale(1, -1) translate(-471.651367, -781.530273) " points="376.382812 604.453125 376.382812 695.988281 550.488281 958.607422 566.919922 958.607422 566.919922 866.955078 392.929688 604.453125"></polygon>
+        <polygon id="4" onclick="s(this,4)" fill="#3D3D3D" points="337.121094 560.294922 303.228516 594.235352 303.228516 959.225586 337.121094 994.959961 372.039062 959.225586 372.039062 594.235352"></polygon>
+        <polygon id="3" onclick="s(this,3)" fill="#3D3D3D" points="572.481445 962.647461 604.673828 997.547852 569.481445 1032.54004 376.317383 1032.54004 340.5 997.59375 376.317383 962.647461"></polygon>
+        <polygon id="2" onclick="s(this,2)" fill="#3D3D3D" points="608.121094 560.294922 574.228516 594.235352 574.228516 959.225586 608.121094 994.959961 643.039062 959.225586 643.039062 594.235352"></polygon>
+        <polygon id="1" onclick="s(this,1)" fill="#3D3D3D" points="572.481445 524.647461 604.673828 559.547852 569.481445 594.540039 376.317383 594.540039 340.5 559.59375 376.317383 524.647461"></polygon>
+    </g>
+</svg>
+</svg>
+</body>
+</html>
+

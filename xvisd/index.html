@@ -19,6 +19,7 @@
         function gethex() {
             hex = "0x"+parseInt(arr.join(""), 2).toString(16).toUpperCase().padStart(4, '0');
             document.getElementById("display").innerHTML=hex
+            document.getElementById("dec").innerHTML=parseInt(arr.join(""), 2).toString(10)
             document.getElementById("bin").innerHTML=arr.join("").match(/.{1,4}/g).join(" ")
         }
 
@@ -33,6 +34,7 @@
 <body>
     <div class="result">
         <div id="display">0x0000</div>
+        <div id="dec">0</div>
         <div id="bin">0000 0000 0000 0000</div>
     </div>
     <?xml version="1.0" encoding="UTF-8"?>
